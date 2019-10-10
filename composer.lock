@@ -224,32 +224,35 @@
         },
         {
             "name": "csa/guzzle-bundle",
-            "version": "v1.3.11",
+            "version": "v1.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/csarrazi/CsaGuzzleBundle.git",
-                "reference": "0294a55b241504bca179d4db5f82ce62d8bb28ad"
+                "reference": "b933c3ea4b30c0467b24ffbf9d77a6f576d191f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/csarrazi/CsaGuzzleBundle/zipball/0294a55b241504bca179d4db5f82ce62d8bb28ad",
-                "reference": "0294a55b241504bca179d4db5f82ce62d8bb28ad",
+                "url": "https://api.github.com/repos/csarrazi/CsaGuzzleBundle/zipball/b933c3ea4b30c0467b24ffbf9d77a6f576d191f4",
+                "reference": "b933c3ea4b30c0467b24ffbf9d77a6f576d191f4",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/guzzle": "~4.0|~5.0",
-                "guzzlehttp/log-subscriber": "~1.0",
-                "php": ">=5.4.0",
-                "symfony/expression-language": "~2.4|~3.0",
-                "symfony/framework-bundle": "~2.3|~3.0",
-                "twig/twig": "~1.12"
+                "guzzlehttp/guzzle": "^4.0|^5.0",
+                "guzzlehttp/log-subscriber": "^1.0",
+                "php": ">=5.4.0|<7.1",
+                "symfony/dependency-injection": "^2.8|^3.0",
+                "symfony/expression-language": "^2.8|^3.0",
+                "symfony/framework-bundle": "^2.8|^3.0",
+                "symfony/http-kernel": "^2.8|^3.0",
+                "twig/twig": "^1.34|^2.4"
             },
             "require-dev": {
-                "doctrine/cache": "~1.1",
-                "guzzlehttp/guzzle-services": "~0.3",
-                "phpunit/phpunit": "~4.0",
-                "symfony/phpunit-bridge": "~2.7|~3.0",
-                "symfony/web-profiler-bundle": "~2.3"
+                "doctrine/cache": "^1.1",
+                "guzzlehttp/guzzle-services": ">=0.3|<0.6",
+                "phpunit/phpunit": "^4.0",
+                "symfony/phpunit-bridge": "^2.8|^3.0",
+                "symfony/web-profiler-bundle": "^2.8|^3.0",
+                "symfony/yaml": "^2.8|^3.0"
             },
             "suggest": {
                 "doctrine/cache": "Allows caching of responses",
@@ -277,7 +280,7 @@
                 }
             ],
             "description": "A bundle integrating GuzzleHttp >= 4.0",
-            "time": "2015-11-17T00:02:55+00:00"
+            "time": "2018-06-12T07:19:01+00:00"
         },
         {
             "name": "curl/curl",
@@ -4443,16 +4446,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
                 "shasum": ""
             },
             "require": {
@@ -4486,7 +4489,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2018-11-20T15:27:04+00:00"
         },
         {
             "name": "react/promise",
@@ -4898,6 +4901,64 @@
                 "shim"
             ],
             "time": "2017-06-09T08:25:21+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "550ebaac289296ce228a706d0867afc34687e3f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/550ebaac289296ce228a706d0867afc34687e3f4",
+                "reference": "550ebaac289296ce228a706d0867afc34687e3f4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.12-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2019-08-06T08:03:45+00:00"
         },
         {
             "name": "symfony/polyfill-intl-icu",
@@ -5617,30 +5678,31 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.34.4",
+            "version": "v1.42.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "f878bab48edb66ad9c6ed626bf817f60c6c096ee"
+                "reference": "21707d6ebd05476854805e4f91b836531941bcd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/f878bab48edb66ad9c6ed626bf817f60c6c096ee",
-                "reference": "f878bab48edb66ad9c6ed626bf817f60c6c096ee",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/21707d6ebd05476854805e4f91b836531941bcd4",
+                "reference": "21707d6ebd05476854805e4f91b836531941bcd4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=5.4.0",
+                "symfony/polyfill-ctype": "^1.8"
             },
             "require-dev": {
                 "psr/container": "^1.0",
-                "symfony/debug": "~2.7",
-                "symfony/phpunit-bridge": "~3.3@dev"
+                "symfony/debug": "^2.7",
+                "symfony/phpunit-bridge": "^3.4.19|^4.1.8|^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.34-dev"
+                    "dev-master": "1.42-dev"
                 }
             },
             "autoload": {
@@ -5669,16 +5731,16 @@
                 },
                 {
                     "name": "Twig Team",
-                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "homepage": "https://twig.symfony.com/contributors",
                     "role": "Contributors"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
-            "homepage": "http://twig.sensiolabs.org",
+            "homepage": "https://twig.symfony.com",
             "keywords": [
                 "templating"
             ],
-            "time": "2017-07-04T13:19:31+00:00"
+            "time": "2019-06-18T15:35:16+00:00"
         }
     ],
     "packages-dev": [
